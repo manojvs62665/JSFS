@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
+    <script src="FormValidation.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="custom-container">
+      <div class="row" style="width: 100%; height: 50%;">
+        <div class="col">
+        <!-- <img class="image-dimension" src="sellerlogo3.png" alt="imagealt" /> -->
+    </div>
+    <div>
+      <!-- <input type="email" id="useremail" placeholder="email" />
+      <input type="password" id="userpassword" placeholder="password" />
+      <button id="loginbtn" class="btn btn-primary">login</button>
+      <button id="regbtn" class="btn btn-primary mt-3 button-color">REGISTER</button>
+      <button id="logoutbtn" class="btn btn-action hide">log out</button> -->
+    </div>
+    <div class="col">
+      <div class="form-content color-text-head">
+        <h1 class="signup-text mt-4 mb-5"><strong>Sign Up here</strong> </h1>
+        <form id="regestrationform" action="#" autocomplete="off">
+          <div class="form-group">
+            <label class="text-color" for="fullname">Full Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="username"
+              placeholder="Enter name"
+            />
+          </div>
+          <div class="form-group">
+            <label class="text-color" for="enteremail">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="useremail"
+              placeholder="Enter email"
+            />
+          </div>
+          <div class="form-group">
+            <label class="text-color" for="enterpassword">Enter Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="userpassword"
+              placeholder="Enter password"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+              title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+            />
+          </div>
+          <div class="form-group">
+            <label class="text-color" for="confirm">Confirm Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="confirmpassword"
+              placeholder="Confirm Password"
+              name="confirmpassword"
+            />
+          </div>
+          <div class="form-group">
+            <label class="text-color" for="address">Address</label>
+            <textarea
+              class="form-control"
+              id="useraddress"
+              rows="3"
+              >
+            </textarea>  
+          </div>
+          <div class="checkbox-input d-flex">
+            <div class="terms-checkbox">
+           <input type="checkbox" id="policy" name="policy" class="checkbox-type"/>
+           </div> 
+           <div class="ml-3"><span class="terms-text">I agree to the
+            <a href="#">Terms and Conditions</a>
+          </span>
+          </div>
+          </div>
+          <div class="button-register">
+            <button id="regbtn" onclick="signUp()" class="btn btn-primary mt-3 button-color">REGISTER</button>
+            <button id="loginbtn" onclick="login()">li</button>
+            <button id="logoutbtn" onclick="logout()">lo</button>
+          </div>
+        </form>
+      </div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>

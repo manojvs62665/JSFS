@@ -1,0 +1,149 @@
+body{
+    background-color: #f8fafa ;
+    line-height: 1;
+}
+.custom-container
+{
+    display: flex;
+    flex: 1 1;
+}
+.signup-text
+{
+    font-size: 26px;
+}
+.color-text-head
+{
+    color: #ee76ad;
+}
+.image-dimension
+{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+       
+}
+.form-content{
+    margin-left: 6vw;
+    margin-right: 8vw;
+    padding: 0px 4vw;
+}
+
+.text-color
+{
+    color:#8b8b92;
+    font-size: 14px;
+}
+input::placeholder
+    {
+        opacity: 0.3 !important;
+        font-size: 12px;
+    }
+
+.terms-checkbox
+{
+    margin-top: auto;
+    padding-top: 2px;
+}
+.terms-text
+{
+    font-size: 12px;
+}
+
+.button-color
+{
+    background-color: #404044 !important;
+    border-radius: 50px !important;
+    border: 2px solid #404044 !important;
+    width: 25vw;
+    font-size: 14px;
+} 
+
+@media (max-width:479px)
+{
+    body
+    {
+        font-size: 1rem;
+    }
+    .image-dimension{
+        display: none;
+    }
+    .form-content
+    {
+        margin-left: 8vw;
+    }
+    .button-color
+{
+    width: 70vw;
+}
+}
+@media  (min-width:480px) and (max-width: 575px)
+{
+    body{
+        font-size: 1.5rem;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .image-dimension
+    {
+        display: none;
+    }
+    .form-content
+    {
+        margin: 2% 10%;
+    }
+    .button-color
+    {
+        width: 75vw;
+    }
+    .row
+    {
+        display: block;
+        flex: none;
+    }
+    col
+    {
+        max-width: 100%;
+    }
+    .row-width
+    {
+        max-width: 100%;
+    }
+    .width-control
+    {
+        width: 100%;
+    }
+}
+
+/* @media  (min-width:576px) and (max-width: 767px)
+{
+    body{
+        font-size: 1.5rem;
+    }
+    .image-dimension
+    {
+        display: none;
+    }
+    .form-content
+    {
+        margin: 2% 10%;
+    }
+    col
+    {
+        max-width: 100%;
+    }
+    .row-width
+    {
+        max-width: 100%;
+    }
+
+} */
+/* 
+@media (min-width: 768px) and (max-width:1020px)
+    {
+        .width-control
+        {
+            width: 60%;
+        }
+    } */
+
